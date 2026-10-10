@@ -10,10 +10,10 @@
   <meta property="og:locale" content="id_ID">
   <meta property="og:title" content="SafarTitip — Jastip Timur Tengah & Open Bagasi">
   <meta property="og:description" content="Titip belanja dan konsultasi open bagasi Timur Tengah dengan alur pemesanan yang jelas. Jadwal dan harga dikonfirmasi terlebih dahulu.">
-  <meta property="og:image" content="assets/og-cover.png">
+  <meta property="og:image" content="og-cover.png">
   <title>SafarTitip — Jastip Timur Tengah & Open Bagasi</title>
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
@@ -219,6 +219,45 @@
     @media (max-width:840px){.container{width:min(720px,calc(100% - 36px))}.nav{height:70px}.mobile-toggle{display:block}.nav-right .btn{display:none}.nav-links{display:none;position:absolute;left:0;right:0;top:70px;background:var(--cream);padding:16px 24px 25px;box-shadow:0 22px 24px #1d42361c;gap:0;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line)}.nav-links.active{display:flex}.nav-links li{width:100%}.nav-links a{display:block;padding:12px 7px;font-size:13px}.hero{padding:70px 0}.hero-grid{grid-template-columns:1fr;gap:32px}.hero-content{text-align:center}.hero-desc{margin-inline:auto}.hero-actions,.hero-notes{justify-content:center}.hero-visual{min-height:510px;max-width:530px;width:100%;margin-inline:auto}.destinations-inner{flex-wrap:wrap;justify-content:center}.destinations-title,.destinations-note{max-width:none;text-align:center}.destinations-items{flex-wrap:wrap;justify-content:center;flex:unset}.service-grid{grid-template-columns:1fr 1fr}.service-card:last-child{grid-column:1/-1;min-height:250px}.steps{grid-template-columns:1fr 1fr}.step:nth-child(2)::after{display:none}.quote-inner{flex-direction:column;align-items:flex-start}.price-grid,.order-layout,.faq-layout{grid-template-columns:1fr}.price-copy{margin-bottom:12px}.order-side{position:static;grid-template-columns:1fr 1fr}.footer-grid{gap:25px}.footer-grid{grid-template-columns:1.25fr 1fr}}
     @media (max-width:570px){.container{width:calc(100% - 36px)}.section{padding:72px 0}.section-head{margin-bottom:31px}.section-head h2,.section-heading{font-size:34px}.brand-name{font-size:22px}.brand-mark{height:40px;width:40px}.brand-caption{font-size:8px}.announcement{font-size:9px;letter-spacing:.06em}.hero{padding:60px 0 64px}.tagline{font-size:9px}h1{font-size:clamp(43px,11vw,57px);margin:24px 0 19px}.hero-desc{font-size:13px;line-height:1.85}.hero-actions{flex-direction:column;align-items:stretch}.hero-actions .btn{width:100%}.hero-notes{gap:12px 18px;margin-top:24px}.hero-notes span{font-size:10px}.hero-visual{min-height:370px}.visual-halo{inset:7px 9px 0;border-width:6px}.hero-logo{width:min(94%,390px)}.float-pill{padding:9px 11px;border-radius:11px;gap:6px}.float-pill p{font-size:9px}.float-pill small{font-size:8px}.float-pill svg{width:19px;height:19px}.float-pill.one{top:47px;left:-4px}.float-pill.two{bottom:18px;right:-5px}.hero-bottom{display:none}.destinations-inner{padding-block:19px;gap:12px}.destinations-items{gap:13px 21px}.destination{font-size:11px}.flag{font-size:20px}.destinations-note{font-size:9px}.service-grid,.steps{grid-template-columns:1fr}.service-card,.service-card:last-child{grid-column:auto;min-height:290px;padding:27px}.service-card p{margin-bottom:16px}.step:not(:last-child)::after{display:none}.step{padding:23px 24px}.step-num{margin-bottom:12px}.quote-band{padding:44px 0}.quote-inner h2{font-size:29px}.quote-inner .btn{width:100%}.price-grid{gap:30px}.pricing-card{padding:29px 25px}.pricing-card h3{font-size:28px}.order-form{padding:24px 19px;border-radius:22px}.form-grid{grid-template-columns:1fr}.form-field.full{grid-column:auto}.form-top h3{font-size:23px}.order-side{grid-template-columns:1fr}.summary-card,.side-help{padding:25px}.faq-layout{gap:26px}.footer{padding-top:51px}.footer-grid{grid-template-columns:1fr;gap:27px;padding-bottom:31px}.footer-bottom{flex-direction:column;gap:5px}.floating-cta{height:53px;width:53px;bottom:18px;right:17px}}
     @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
+    /* ===== WELCOME POPUP + MUSIC CONTROLLER ===== */
+    .welcome-dialog{width:min(800px,calc(100% - 28px));max-width:800px;max-height:min(92dvh,820px);padding:0;overflow:auto;border:1px solid rgba(221,182,108,.36);border-radius:28px;background:var(--paper);color:var(--deep);box-shadow:0 34px 110px #001c17a0;overscroll-behavior:contain}
+    .welcome-dialog::backdrop{background:rgba(4,26,24,.8);-webkit-backdrop-filter:blur(9px);backdrop-filter:blur(9px)}
+    .welcome-layout{display:grid;grid-template-columns:.91fr 1.09fr;min-height:450px}
+    .welcome-art{position:relative;isolation:isolate;display:flex;align-items:center;justify-content:center;padding:30px 22px;overflow:hidden;background:radial-gradient(ellipse at 50% 33%,#316b54 0,#16483a 48%,#092b27 100%)}
+    .welcome-art:before,.welcome-art:after{content:"";position:absolute;inset:15px;border:1px solid #e7c4814a;border-radius:240px 240px 20px 20px;pointer-events:none}
+    .welcome-art:after{inset:29px;border-color:#e7c48130;opacity:.85}
+    .welcome-symbol{position:absolute;font:400 24px var(--serif);color:#ead29b;top:24px;left:28px;opacity:.9}
+    .welcome-deco{position:absolute;bottom:24px;color:#f4dda8a6;font-size:10px;letter-spacing:.25em;font-weight:800;text-align:center}
+    .welcome-logo{width:min(90%,330px);height:auto;filter:drop-shadow(0 17px 32px rgba(0,0,0,.35));position:relative;z-index:1;animation:welcome-float 5s ease-in-out infinite}
+    .welcome-content{padding:52px 38px 39px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+    .welcome-arabic{font-family:Georgia,serif;font-size:26px;line-height:1.3;color:#bd8c3a;margin:0 0 7px;direction:rtl}
+    .welcome-kicker{font-size:10px;letter-spacing:.18em;font-weight:800;color:#936b30;text-transform:uppercase;margin:0 0 14px}
+    .welcome-heading{font:600 clamp(31px,4vw,43px)/1.17 var(--serif);letter-spacing:-.035em;color:var(--deep);margin:0 0 15px}
+    .welcome-heading span{display:block;color:var(--gold);font-style:italic}
+    .welcome-desc{font-size:13px;line-height:1.85;color:#63736b;margin:0 0 18px}
+    .welcome-tags{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 25px}
+    .welcome-tags span{background:#f2eddf;border:1px solid #e9ddc3;padding:6px 10px;border-radius:24px;color:#466358;font-size:10px;font-weight:750}
+    .welcome-actions{display:grid;grid-template-columns:1fr;gap:9px;width:100%}
+    .welcome-start,.welcome-silent{display:flex;justify-content:center;align-items:center;gap:9px;width:100%;min-height:49px;padding:12px 17px;border-radius:13px;font-size:12px;font-weight:800;border:1px solid transparent;transition:transform .18s,box-shadow .18s,background .18s;white-space:normal}
+    .welcome-start{background:var(--forest);color:white;box-shadow:0 10px 24px #103e3430}
+    .welcome-start:hover{transform:translateY(-2px);background:#205a4b;box-shadow:0 13px 26px #103e3442}
+    .welcome-silent{background:white;border-color:#ddd7c8;color:var(--forest)}
+    .welcome-silent:hover{background:#f6f1e8}
+    .welcome-actions svg,.music-controller svg{width:18px;height:18px;flex-shrink:0}
+    .welcome-foot{font-size:10px!important;line-height:1.65!important;margin:13px 0 0!important;color:#7f8880!important}
+    .music-controller{position:fixed;bottom:27px;left:24px;z-index:41;display:inline-flex;align-items:center;gap:10px;min-height:49px;border-radius:100px;border:1px solid #d5bc83;background:rgba(255,253,247,.96);box-shadow:0 11px 35px rgba(10,43,34,.19);color:var(--forest);padding:10px 16px;font-size:11px;font-weight:800;transition:transform .2s,background .2s}
+    .music-controller:hover{transform:translateY(-2px);background:white}
+    .music-controller.is-playing{background:#164b3d;color:#fff;border-color:#d7b575}
+    .music-bars{height:16px;display:inline-flex;gap:2px;align-items:flex-end}
+    .music-bars i{display:block;width:3px;height:5px;border-radius:3px;background:currentColor;opacity:.8}
+    .music-controller.is-playing .music-bars i{animation:music-wave .9s ease-in-out infinite alternate}
+    .music-controller.is-playing .music-bars i:nth-child(2){animation-delay:.25s}
+    .music-controller.is-playing .music-bars i:nth-child(3){animation-delay:.5s}
+    @keyframes music-wave{from{height:4px}to{height:15px}}
+    @keyframes welcome-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    @media(max-width:680px){.welcome-dialog{width:min(440px,calc(100% - 24px));max-height:92dvh;border-radius:22px}.welcome-layout{grid-template-columns:1fr}.welcome-art{min-height:175px;padding:12px 23px}.welcome-art:before,.welcome-art:after{border-radius:130px 130px 13px 13px}.welcome-logo{width:175px;max-height:170px;object-fit:contain}.welcome-symbol{top:13px;left:18px;font-size:17px}.welcome-deco{display:none}.welcome-content{padding:22px 23px 26px;align-items:center;text-align:center}.welcome-arabic{font-size:22px}.welcome-kicker{font-size:9px;margin-bottom:8px}.welcome-heading{font-size:30px;margin-bottom:11px}.welcome-desc{font-size:12px;margin-bottom:14px}.welcome-tags{justify-content:center;margin-bottom:16px}.welcome-foot{text-align:center}.music-controller{bottom:20px;left:17px;min-height:46px;padding:9px 13px}}
+    @media(max-height:650px) and (min-width:681px){.welcome-content{padding:22px 25px}.welcome-layout{min-height:370px}.welcome-desc{margin-bottom:10px}.welcome-tags{margin-bottom:14px}}
+    @media(prefers-reduced-motion:reduce){.welcome-logo,.music-controller.is-playing .music-bars i{animation:none!important}}
   </style>
 </head>
 <body>
@@ -251,7 +290,7 @@
       </div>
       <div class="hero-visual" aria-label="Logo SafarTitip dengan ilustrasi koper dan perjalanan Timur Tengah">
         <div class="visual-halo"></div>
-        <img class="hero-logo" src="assets/safartitip-logo.webp" alt="Logo SafarTitip, jastip Timur Tengah dan open bagasi" width="820" height="820" fetchpriority="high">
+        <img class="hero-logo" src="safartitip-logo.webp" alt="Logo SafarTitip, jastip Timur Tengah dan open bagasi" width="820" height="820" fetchpriority="high">
         <div class="float-pill one"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" fill="none" aria-hidden="true"><path d="M4 8h16v12H4zM2 8l10-5 10 5M8 12h8M12 8v12"/></svg><p>Jastip Pilihanmu<small>Belanja sesuai kebutuhan</small></p></div>
         <div class="float-pill two"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" fill="none" aria-hidden="true"><rect x="5" y="6" width="14" height="15" rx="2"/><path d="M9 6V4h6v2M9 10v7m6-7v7"/></svg><p>Open Bagasi<small>Cek jadwal & kapasitas</small></p></div>
       </div>
@@ -316,8 +355,90 @@
   <div><h4>Jelajahi</h4><ul><li><a href="#layanan">Layanan Kami</a></li><li><a href="#cara-kerja">Cara Kerja</a></li><li><a href="#biaya">Informasi Biaya</a></li><li><a href="#pemesanan">Formulir Pemesanan</a></li><li><a href="#faq">FAQ</a></li></ul></div>
   <div><h4>Catatan Penting</h4><p class="note">SafarTitip bukan perusahaan maskapai atau layanan kurir resmi. Jadwal, kapasitas, dan permintaan barang hanya dianggap diterima setelah konfirmasi admin. Patuhi deklarasi serta ketentuan kepabeanan dan penerbangan.</p><a class="inline-link" style="color:#ebcd91" href="#pemesanan">Hubungi lewat formulir →</a></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> SafarTitip. Dirancang untuk pengalaman yang lebih mudah.</span><span>Made for the journey <span style="color:#e5c889">✦</span> Timur Tengah — Indonesia</span></div></div></footer>
 <a href="#pemesanan" class="floating-cta" aria-label="Isi permintaan SafarTitip" title="Konsultasi SafarTitip"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 9 9 0 0 1-4.1-1l-5.4 1.5 1.5-5.4a9 9 0 0 1-1-4.1A8.5 8.5 0 0 1 13 3a8.5 8.5 0 0 1 8 8.5Z"/><path d="M9 9c1 3 3 5 6 6"/></svg></a>
+<!-- Popup sambutan otomatis saat pengunjung membuka website -->
+<dialog id="welcomeDialog" class="welcome-dialog" aria-labelledby="welcomeTitle" aria-describedby="welcomeDescription">
+  <div class="welcome-layout">
+    <div class="welcome-art">
+      <span class="welcome-symbol" aria-hidden="true">✦</span>
+      <img class="welcome-logo" src="safartitip-logo.webp" width="820" height="820" alt="Logo SafarTitip" loading="eager">
+      <span class="welcome-deco" aria-hidden="true">SAFAR · TITIP · JOURNEY</span>
+    </div>
+    <div class="welcome-content">
+      <p class="welcome-arabic" lang="ar">أهلاً وسهلاً</p>
+      <p class="welcome-kicker">MARHABAN · WELCOME TO SAFARTITIP</p>
+      <h2 id="welcomeTitle" class="welcome-heading">Selamat datang di <span>SafarTitip.</span></h2>
+      <p id="welcomeDescription" class="welcome-desc">Dari Timur Tengah, lebih dekat ke tanganmu. Jelajahi layanan jastip, oleh-oleh pilihan, dan konsultasi open bagasi dalam satu tempat.</p>
+      <div class="welcome-tags" aria-label="Layanan SafarTitip"><span>✈️ Jastip Timur Tengah</span><span>🧳 Open Bagasi</span></div>
+      <div class="welcome-actions">
+        <button id="welcomePlay" type="button" class="welcome-start"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg> Masuk &amp; Putar Musik</button>
+        <button id="welcomeQuiet" type="button" class="welcome-silent">Masuk tanpa musik <span aria-hidden="true">→</span></button>
+      </div>
+      <p class="welcome-foot">Instrumental orisinal bernuansa Arabian • Musik dapat dimatikan kapan saja.</p>
+    </div>
+  </div>
+</dialog>
+<!-- File MP3 disimpan bersama index.html pada direktori utama -->
+<audio id="arabianAudio" src="arabian-ambience.mp3" preload="metadata" autoplay loop playsinline></audio>
+<button id="musicToggle" class="music-controller" type="button" aria-label="Nyalakan musik latar" aria-pressed="false">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+  <span id="musicLabel">Musik: Mati</span><span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+</button>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <dialog id="setupModal" aria-labelledby="modalTitle"><h3 id="modalTitle">Pesanmu sudah siap ✨</h3><p>Nomor WhatsApp admin belum dipasang oleh pemilik website. Kamu tetap bisa menyalin draf berikut. Setelah nomor admin dikonfigurasi, tombol formulir akan membuka WhatsApp secara otomatis.</p><textarea id="messageDraft" readonly aria-label="Draf pesan permintaan"></textarea><div class="modal-actions"><button type="button" class="btn btn-light" id="closeModal">Tutup</button><button type="button" class="btn btn-primary" id="copyDraft">Salin Pesan</button></div></dialog>
+<script>
+/* Sambutan SafarTitip — compatible dengan browser modern & HP.
+   Beberapa browser memblokir autoplay musik hingga pengunjung mengklik tombol. */
+(function(){
+  'use strict';
+  const popup=document.getElementById('welcomeDialog');
+  const audio=document.getElementById('arabianAudio');
+  const enterWithMusic=document.getElementById('welcomePlay');
+  const enterSilently=document.getElementById('welcomeQuiet');
+  const toggle=document.getElementById('musicToggle');
+  const label=document.getElementById('musicLabel');
+  if(!popup||!audio||!toggle)return;
+  audio.volume=0.23; // volume lembut: 0.0 s.d. 1.0
+  function syncMusic(){
+    const active=!audio.paused && !audio.ended;
+    toggle.classList.toggle('is-playing',active);
+    toggle.setAttribute('aria-pressed',String(active));
+    toggle.setAttribute('aria-label',active?'Matikan musik latar':'Nyalakan musik latar');
+    label.textContent=active?'Musik: Aktif':'Musik: Mati';
+  }
+  audio.addEventListener('play',syncMusic);
+  audio.addEventListener('pause',syncMusic);
+  audio.addEventListener('ended',syncMusic);
+  audio.addEventListener('error',()=>{
+    label.textContent='Audio tak tersedia';
+    toggle.setAttribute('title','Pastikan arabian-ambience.mp3 di-upload bersama index.html');
+  });
+  function startMusic(){
+    // Dipanggil langsung saat klik pengunjung: syarat utama autoplay mobile.
+    const requested=audio.play();
+    if(requested && typeof requested.catch==='function')requested.catch(()=>{syncMusic()});
+  }
+  function closePopup(){
+    if(popup.open){ if(typeof popup.close==='function')popup.close(); else popup.removeAttribute('open'); }
+  }
+  enterWithMusic.addEventListener('click',()=>{startMusic();closePopup()});
+  enterSilently.addEventListener('click',()=>{audio.pause();closePopup()});
+  popup.addEventListener('cancel',()=>{audio.pause()});
+  toggle.addEventListener('click',()=>{
+    if(audio.paused)startMusic();else audio.pause();
+  });
+  // Popup otomatis pada setiap pembukaan halaman; saat reload akan tampil lagi.
+  // Untuk hanya menampilkan sekali per tab, gunakan sessionStorage bila diperlukan.
+  try{
+    if(typeof popup.showModal==='function')popup.showModal();
+    else popup.setAttribute('open','');
+  }catch(e){popup.setAttribute('open','');}
+  // Coba autoplay untuk browser yang mengizinkan; browser lain menunggu tombol.
+  // Promise rejection normal di Safari/Chrome mobile (autoplay policy).
+  const attempt=audio.play();
+  if(attempt && typeof attempt.catch==='function')attempt.catch(()=>syncMusic());
+  syncMusic();
+})();
+</script>
 <script>
 /* =====================================================
    PENGATURAN WEBSITE: edit nilai di bawah sebelum publikasi.
